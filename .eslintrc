@@ -1,0 +1,52 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["react"],
+    "plugins": [
+        "react", "html"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+     "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "settings": {
+        "html/html-extensions": [".html"]
+    },
+    "rules": {
+        "react/jsx-uses-react": "error",
+        "react/prop-types": 0,
+        "jsx-a11y/href-no-hash": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "no-console": 0,
+        "react/jsx-uses-vars": "error",
+        "operator-linebreak": [
+            "error",
+            "after", {
+                "overrides": {
+                    "?": "ignore",
+                    ":": "ignore"
+                }
+            }
+        ],
+        "indent": "off",
+        "max-len" :"off",
+        "max-depth":"off",
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "off",
+            "single"
+        ]
+
+    }
+}
